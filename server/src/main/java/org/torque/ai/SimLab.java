@@ -53,6 +53,10 @@ public class SimLab {
             "window.parent", "window.top", "parent.", "top.location", "postmessage", "window.open", "<iframe", "<object",
             "<embed", "<form", "<link", "serviceworker", "geolocation", "getusermedia", "requestfullscreen");
 
+    // not a hole in the list below: these are identifiers on an <svg> tag, and nothing requests them
+    private static final List<String> svgNamespaces = List.of(
+            "http://www.w3.org/2000/svg", "http://www.w3.org/1999/xlink");
+
     private static final int maxHtml = 60_000; // a real sim is a few kB. anything much bigger isn't one
 
     private final Claude claude;
@@ -174,6 +178,12 @@ public class SimLab {
     // layer 4, and the one that actually holds. plain string checks, no model involved, nothing to persuade
     static boolean unsafe(String html) {
         String low = html.toLowerCase(Locale.ROOT); // lowercased once, since the list is all lowercase
+        // the two w3c namespaces come out first, before anything looks for "http://". they are the
+        // xmlns on an <svg> tag -- a name, not an address, nothing fetches them -- but they contain
+        // http:// and so were tripping the check below and binning perfectly good simulations.
+        // only these two exact strings go; any other http:// in the page still gets caught, and the
+        // csp blocks the network regardless
+        for (String ns : svgNamespaces) low = low.replace(ns, "");
         if (html.length() > maxHtml) return true;
         // has to look like a page at all. catches a model that answered with prose instead
         if (!low.contains("<html") && !low.contains("<body") && !low.contains("<svg") && !low.contains("<canvas")) return true;
