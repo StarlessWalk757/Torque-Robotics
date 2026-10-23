@@ -1,0 +1,17 @@
+# One-click deploy config for Render (https://render.com). Point Render at this repo and it reads this file.
+services:
+  - type: web
+    name: torque
+    runtime: docker
+    plan: free
+    region: ohio
+    healthCheckPath: /api/status
+    autoDeploy: true
+    envVars:
+      # Set this in the Render dashboard to switch the AI mentor on. Leave it unset and the app still
+      # works: CAD grading is fully measured, and feedback comes from the built-in rules.
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      # AI requests allowed per visitor per hour, so a public link can't run up the bill.
+      - key: TORQUE_AI_PER_HOUR
+        value: "15"

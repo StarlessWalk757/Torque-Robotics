@@ -1,0 +1,28 @@
+{
+  "name": "torque-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Torque: the React front end. Built into the Java server's static folder.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc --noEmit",
+    "samples": "node scripts/make-samples.mjs",
+    "check:content": "tsx scripts/check-content.ts"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tsx": "^4.23.13",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}

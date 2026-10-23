@@ -1,0 +1,9 @@
+# Keep the build context small and reproducible.
+**/node_modules
+**/target
+web/dist-dev
+web/src/main/resources/static
+server/src/main/resources/static
+recording
+.git
+.DS_Store

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 260" width="660" height="260" role="img"
+ aria-label="A two kilogram mass and the 19.6 newton weight force it produces under gravity">
+<style>
+ text{font-family:Inter,Helvetica,Arial,sans-serif;fill:#2b2d42}
+ .lbl{font-size:12.5px}.val{font-size:14px;font-weight:600}.hdr{font-size:12px;fill:#777c99;letter-spacing:.08em}
+ .part{fill:#e4e6ee;stroke:#737892;stroke-width:1.2}
+ .frc{stroke:#d1560f;stroke-width:2}
+</style>
+<defs><marker id="o" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9z" fill="#d1560f"/></marker></defs>
+<text x="24" y="26" class="hdr">MASS IS NOT WEIGHT</text>
+
+<rect x="120" y="70" width="96" height="96" rx="5" class="part"/>
+<text x="168" y="124" class="val" text-anchor="middle">2 kg</text>
+<text x="168" y="186" class="lbl" fill="#777c99" text-anchor="middle">mass — how much stuff</text>
+<text x="168" y="204" class="lbl" fill="#777c99" text-anchor="middle">same everywhere</text>
+
+<line x1="168" y1="170" x2="168" y2="232" class="frc" marker-end="url(#o)"/>
+
+<text x="330" y="106" class="val">W = m × g</text>
+<text x="330" y="132" class="val">= 2 kg × 9.81 m/s²</text>
+<text x="330" y="158" class="val" fill="#d1560f">= 19.6 N</text>
+<text x="330" y="190" class="lbl" fill="#777c99">weight — the force gravity pulls with</text>
+<text x="330" y="208" class="lbl" fill="#777c99">this is the number a bracket has to hold</text>
+</svg>

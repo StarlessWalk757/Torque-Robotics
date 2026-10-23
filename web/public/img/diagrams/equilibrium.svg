@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 280" width="660" height="280" role="img"
+ aria-label="A block resting on a table with weight down and the normal force up, equal and opposite, so the forces balance">
+<style>
+ text{font-family:Inter,Helvetica,Arial,sans-serif;fill:#2b2d42}
+ .lbl{font-size:12.5px}.val{font-size:13px;font-weight:600}.hdr{font-size:12px;fill:#777c99;letter-spacing:.08em}
+ .part{fill:#e4e6ee;stroke:#737892;stroke-width:1.2}
+ .frc{stroke:#d1560f;stroke-width:2}
+ .rea{stroke:#1f4fd8;stroke-width:2}
+ .grd{stroke:#737892;stroke-width:1.4}
+</style>
+<defs>
+ <marker id="o" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9z" fill="#d1560f"/></marker>
+ <marker id="b" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9z" fill="#1f4fd8"/></marker>
+</defs>
+<text x="24" y="26" class="hdr">NOT ACCELERATING  →  THE ARROWS CANCEL</text>
+
+<line x1="90" y1="196" x2="330" y2="196" class="grd"/>
+<path d="M100 196l-10 12M130 196l-10 12M160 196l-10 12M190 196l-10 12M220 196l-10 12M250 196l-10 12M280 196l-10 12M310 196l-10 12" stroke="#9aa0bb" stroke-width="1"/>
+<rect x="168" y="138" width="84" height="58" class="part"/>
+<line x1="210" y1="138" x2="210" y2="74" class="rea" marker-end="url(#b)"/>
+<text x="222" y="92" class="val" fill="#1f4fd8">N = 19.6 N</text>
+<line x1="210" y1="196" x2="210" y2="258" class="frc" marker-end="url(#o)"/>
+<text x="222" y="246" class="val" fill="#d1560f">W = 19.6 N</text>
+
+<text x="400" y="118" class="val">↑ forces  =  ↓ forces</text>
+<text x="400" y="146" class="val">← forces  =  → forces</text>
+<text x="400" y="182" class="lbl" fill="#777c99">Two equations, so you can solve</text>
+<text x="400" y="200" class="lbl" fill="#777c99">for two forces you cannot measure.</text>
+</svg>

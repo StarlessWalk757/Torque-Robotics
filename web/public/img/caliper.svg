@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" width="320" height="200" role="img"
+     aria-label="A vernier caliper reading 14.46 millimetres">
+  <rect width="320" height="200" fill="#0e2238"/>
+  <!-- beam and main scale -->
+  <rect x="24" y="78" width="272" height="16" rx="3" fill="#1E3A5A" stroke="#A9B8C9" stroke-width="1.5"/>
+  <g stroke="#A9B8C9" stroke-width="1">
+    <path d="M40 78v-9M64 78v-6M88 78v-6M112 78v-9M136 78v-6M160 78v-6M184 78v-9M208 78v-6M232 78v-6M256 78v-9"/>
+  </g>
+  <g fill="#8FA3BA" font-family="monospace" font-size="9" text-anchor="middle">
+    <text x="40" y="62">0</text><text x="112" y="62">10</text><text x="184" y="62">20</text><text x="256" y="62">30</text>
+  </g>
+  <!-- jaws -->
+  <path d="M24 78V40h10v38M118 94v34h-9V94" fill="#1E3A5A" stroke="#A9B8C9" stroke-width="1.5"/>
+  <!-- slider with the vernier scale -->
+  <rect x="104" y="94" width="104" height="18" rx="3" fill="#16304C" stroke="#4CC9F0" stroke-width="1.5"/>
+  <g stroke="#4CC9F0" stroke-width="1">
+    <path d="M112 112v7M126 112v5M140 112v5M154 112v7M168 112v5M182 112v5M196 112v7"/>
+  </g>
+  <path d="M154 112v7" stroke="#FFD43B" stroke-width="2.5"/>
+  <path d="M154 78v-18" stroke="#FFD43B" stroke-width="1" stroke-dasharray="3 3"/>
+  <text x="154" y="134" fill="#FFD43B" font-family="monospace" font-size="9" text-anchor="middle">lines up</text>
+  <!-- the reading -->
+  <text x="160" y="168" fill="#E8EEF6" font-family="monospace" font-size="15" text-anchor="middle">14 mm + 23 × 0.02</text>
+  <text x="160" y="186" fill="#69DB7C" font-family="monospace" font-size="15" text-anchor="middle">= 14.46 mm</text>
+</svg>

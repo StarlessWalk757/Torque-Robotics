@@ -1,0 +1,4 @@
+Technical-drawing style used by every diagram here:
+  white ground, 1.2px hairlines, dimension lines with ticks, small sans labels,
+  one accent colour per quantity (blue = distance, orange = force), no fills except
+  grey machined parts. Meant to read like a textbook figure, not an illustration.

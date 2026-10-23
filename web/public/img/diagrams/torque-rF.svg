@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300" role="img"
+ aria-label="Two wrenches of different length on the same bolt, each pushed with 20 newtons, producing 10 and 20 newton metres">
+<style>
+ text{font-family:Inter,Helvetica,Arial,sans-serif;fill:#2b2d42}
+ .lbl{font-size:13px}.val{font-size:13.5px;font-weight:600}.hdr{font-size:12px;fill:#777c99;letter-spacing:.08em}
+ .part{fill:#e4e6ee;stroke:#737892;stroke-width:1.2}
+ .dim{stroke:#1f4fd8;stroke-width:1.1}
+ .frc{stroke:#d1560f;stroke-width:1.8}
+ .ctr{stroke:#9aa0bb;stroke-width:.9;stroke-dasharray:9 3 2 3}
+</style>
+<defs>
+ <marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9z" fill="#d1560f"/></marker>
+ <marker id="t" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M3.5 0v7" stroke="#1f4fd8" stroke-width="1.4"/></marker>
+</defs>
+
+<text x="24" y="28" class="hdr">TORQUE ABOUT THE BOLT CENTRE</text>
+
+<!-- case 1 -->
+<line x1="92" y1="46" x2="92" y2="128" class="ctr"/>
+<circle cx="92" cy="92" r="17" class="part"/><circle cx="92" cy="92" r="6" fill="#737892"/>
+<rect x="88" y="83" width="170" height="18" rx="4" class="part"/>
+<line x1="256" y1="92" x2="256" y2="50" class="frc" marker-end="url(#a)"/>
+<text x="264" y="56" class="val" fill="#d1560f">F = 20 N</text>
+<line x1="92" y1="126" x2="256" y2="126" class="dim" marker-start="url(#t)" marker-end="url(#t)"/>
+<text x="174" y="143" class="lbl" fill="#1f4fd8" text-anchor="middle">r = 0.50 m</text>
+<text x="400" y="97" class="val">τ = 0.50 × 20 = 10 N·m</text>
+
+<!-- case 2 -->
+<line x1="92" y1="166" x2="92" y2="248" class="ctr"/>
+<circle cx="92" cy="212" r="17" class="part"/><circle cx="92" cy="212" r="6" fill="#737892"/>
+<rect x="88" y="203" width="330" height="18" rx="4" class="part"/>
+<line x1="416" y1="212" x2="416" y2="170" class="frc" marker-end="url(#a)"/>
+<text x="424" y="176" class="val" fill="#d1560f">F = 20 N</text>
+<line x1="92" y1="246" x2="416" y2="246" class="dim" marker-start="url(#t)" marker-end="url(#t)"/>
+<text x="254" y="263" class="lbl" fill="#1f4fd8" text-anchor="middle">r = 1.00 m</text>
+<text x="400" y="217" class="val">τ = 1.00 × 20 = 20 N·m</text>
+<text x="24" y="287" class="lbl" fill="#777c99">Same force. Twice the radius. Twice the torque.</text>
+</svg>

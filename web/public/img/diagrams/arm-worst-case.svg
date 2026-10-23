@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300" role="img"
+ aria-label="A robot arm at three angles, showing the moment arm and required torque are largest when the arm is horizontal">
+<style>
+ text{font-family:Inter,Helvetica,Arial,sans-serif;fill:#2b2d42}
+ .lbl{font-size:13px}.val{font-size:13px;font-weight:600}.hdr{font-size:12px;fill:#777c99;letter-spacing:.08em}
+ .part{fill:#e4e6ee;stroke:#737892;stroke-width:1.2}
+ .arm{stroke:#737892;stroke-width:9;stroke-linecap:round;fill:none}
+ .ghost{stroke:#c8ccdc;stroke-width:9;stroke-linecap:round;fill:none}
+ .dim{stroke:#1f4fd8;stroke-width:1.1}
+ .frc{stroke:#d1560f;stroke-width:1.8}
+ .thin{stroke:#9aa0bb;stroke-width:1;stroke-dasharray:5 4}
+</style>
+<defs>
+ <marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9z" fill="#d1560f"/></marker>
+ <marker id="t" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M3.5 0v7" stroke="#1f4fd8" stroke-width="1.4"/></marker>
+</defs>
+<text x="24" y="28" class="hdr">SIZE THE MOTOR FOR THE HORIZONTAL POSITION</text>
+
+<circle cx="150" cy="175" r="18" class="part"/><circle cx="150" cy="175" r="6" fill="#737892"/>
+<line x1="150" y1="175" x2="276" y2="78" class="ghost"/>
+<line x1="150" y1="175" x2="306" y2="128" class="ghost"/>
+<line x1="150" y1="175" x2="470" y2="175" class="arm"/>
+<rect x="462" y="160" width="32" height="30" rx="4" class="part"/>
+<text x="478" y="152" class="lbl" text-anchor="middle">load</text>
+
+<line x1="478" y1="196" x2="478" y2="252" class="frc" marker-end="url(#a)"/>
+<text x="492" y="232" class="val" fill="#d1560f">W</text>
+<line x1="150" y1="268" x2="478" y2="268" class="dim" marker-start="url(#t)" marker-end="url(#t)"/>
+<text x="314" y="286" class="lbl" fill="#1f4fd8" text-anchor="middle">moment arm is longest here</text>
+<line x1="150" y1="175" x2="150" y2="268" class="thin"/>
+<line x1="478" y1="196" x2="478" y2="268" class="thin"/>
+<text x="285" y="100" class="lbl" fill="#9aa0bb">raised: shorter arm, less torque</text>
+</svg>
